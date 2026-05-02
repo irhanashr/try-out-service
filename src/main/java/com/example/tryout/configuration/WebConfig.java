@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Mengizinkan semua endpoint
-                .allowedOrigins("http://localhost:4200") // Origin Angular kamu
+                .allowedOrigins("http://localhost:4200","https://latihan-soal-sma-3-1997.web.app") // Origin Angular kamu
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
